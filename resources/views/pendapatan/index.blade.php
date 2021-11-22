@@ -9,7 +9,7 @@
     <h2>5026201149</h2>
 	<h3>Data Pendapatan</h3>
 
-	<a href="/pegawai/tambah"> + Tambah Pegawai Baru</a>
+	<a href="/pendapatan/tambah"> + Tambah Pegawai Baru</a>
 
 	<br/>
 	<br/>
@@ -17,7 +17,7 @@
 	<table border="1">
 		<tr>
 			<th>ID :</th>
-			<th>Nama :</th>
+			<th>ID Pegawai :</th>
 			<th>Bulan :</th>
 			<th>Tahun :</th>
 			<th>Gaji :</th>
@@ -32,9 +32,9 @@
             <td>{{ $p->Gaji }}</td>
             <td>{{ $p->Tunjangan }}</td>
 			<td>
-				<a href="/pegawai/edit/{{ $p->pegawai_id }}">Edit</a>
+				<a href="/pendapatan/edit/{{ $p->ID }}">Edit</a>
 				|
-				<a href="/pegawai/hapus/{{ $p->pegawai_id }}">Hapus</a>
+				<a href="/pendapatan/hapus/{{ $p->ID }}">Hapus</a>
 			</td>
 		</tr>
 		@endforeach

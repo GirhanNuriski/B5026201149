@@ -62,3 +62,12 @@ Route::get('/pendapatan/tambah','PendapatanController@tambah');
 
 //route
 Route::post('/pendapatan/store','PendapatanController@store');
+
+//route update
+Route::get('/pendapatan/edit/{id}','PendapatanController@edit');
+
+//route update
+Route::post('/pendapatan/update','PendapatanController@update');
+
+//route hapus
+Route::get('/pendapatan/hapus/{id}','PendapatanController@hapus');
