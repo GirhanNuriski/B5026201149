@@ -52,3 +52,7 @@ Route::post('/pegawai/update','PegawaiController@update');
 
 //route hapus
 Route::get('/pegawai/hapus/{id}','PegawaiController@hapus');
+
+//tugas
+//route pendapatan
+Route::get('/pendapatan','PendapatanController@index');
