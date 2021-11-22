@@ -56,3 +56,9 @@ Route::get('/pegawai/hapus/{id}','PegawaiController@hapus');
 //tugas
 //route pendapatan
 Route::get('/pendapatan','PendapatanController@index');
+
+//route tambah pendapatan
+Route::get('/pendapatan/tambah','PendapatanController@tambah');
+
+//route
+Route::post('/pendapatan/store','PendapatanController@store');
