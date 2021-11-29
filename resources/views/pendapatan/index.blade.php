@@ -9,7 +9,7 @@
     <h2>5026201149</h2>
 	<h3>Data Pendapatan</h3>
 
-	<a href="/pendapatan/tambah"> + Tambah Pegawai Baru</a>
+	<a href="/pendapatan/tambah"> + Tambah Pendapatan Baru</a>
 
 	<br/>
 	<br/>
