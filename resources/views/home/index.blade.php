@@ -94,7 +94,7 @@
 <div class="sidebar">
     <img src="img/foto diri.jpg" style="width:100px;margin-left:75px;margin-top:20px;border-radius:30px">
     <h4>Girhan Nuriski Lusandi 5026201149</h4>
-  <a class="active" href="/home">Home</a>
+  <a href="/home">Home</a>
   <a href="/pegawai">Pegawai</a>
   <a href="/absen">Absen</a>
   <a href="/pendapatan">Pendapatan</a>

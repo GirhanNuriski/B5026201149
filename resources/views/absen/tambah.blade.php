@@ -6,10 +6,12 @@
 
 @section('judulhalaman', 'TAMBAH ABSEN PEGAWAI')
 
-<div class="container">
+<div>
 	<form action="/absen/store" method="post">
 		{{ csrf_field() }}
-        <h2>Tambah Absen</h2><br>
+        <div class="jumbotron" style="background-color: rgb(39, 39, 39)">
+            <h3 class="text text-center" style="color:white; font-style:'Libre Franklin'";>Tambah Absen</h3>
+        </div>
     </div>
     <div class="row">
         <div class="col-lg-2">
@@ -54,7 +56,8 @@
             </div>
         </div>
     </div>
-		<input type="submit" value="Simpan Data" class="btn btn-primary">
+        <a href="/absen" class="btn btn-primary">Kembali</a>
+		<input type="submit" value="Simpan Data" class="btn btn-success">
 	</form>
 </div>
 @endsection

@@ -1,19 +1,16 @@
 @extends('layout.ceria')
 
-@section('title','DATABASE ABSEN PEGAWAI')
+@section('title','ABSEN PEGAWAI')
 
 @section('isikonten')
 
 @section('judulhalaman', 'DATABASE ABSEN PEGAWAI')
 
-    <h3>Data Absen Pegawai</h3>
+<div class="jumbotron" style="background-color: rgb(39, 39, 39)">
+    <h3 class="text text-center" style="color:white; font-style:'Libre Franklin'";>Data Absen Pegawai</h3>
+</div>
 
-	<a href="/absen/tambah" class="btn btn-primary" > + Tambah Absen Pegawai Baru</a>
-
-	<br/>
-	<br/>
-
-	<table class="table table-success table-striped">
+	<table class="table table-success table-striped table-bordered table-hover">
 		<tr>
 			<th>ID</th>
 			<th>ID Pegawai</th>
@@ -36,5 +33,6 @@
 		@endforeach
 	</table>
 
+    <a href="/absen/tambah" class="btn btn-primary"> + Tambah Absen Pegawai Baru</a>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 @endsection

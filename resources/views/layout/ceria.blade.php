@@ -94,7 +94,7 @@
 </head>
 <body>
     <div class="sidebar">
-        <img src="img/foto diri.jpg" style="width:100px;margin-left:75px;margin-top:20px;border-radius:30px">
+        <img src="{{asset('img/foto diri.jpg')}}" style="width:100px;margin-left:75px;margin-top:20px;border-radius:30px">
         <h4>Girhan Nuriski Lusandi 5026201149</h4>
       <a href="/home">Home</a>
       <a href="/pegawai">Pegawai</a>
@@ -107,12 +107,7 @@
       </footer>
     </div>
     <div class="content">
-    <h2><a href="https://www.malasngoding.com"></a></h2>
-	<h3>@yield('judulhalaman')</h3>
 
-	<a href="/absen"> Kembali</a>
-
-	<br/>
 	<br/>
 
     @section('isikonten')

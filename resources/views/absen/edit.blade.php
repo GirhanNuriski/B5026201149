@@ -4,11 +4,14 @@
 
 @section('isikonten')
 
-@section('judulhalaman', 'EDIT ABSEN')
+@section('judulhalaman', 'EDIT ABSEN PEGAWAI')
 
 	@foreach($absen as $p)
 	<form action="/absen/update" method="post">
 		{{ csrf_field() }}
+        <div class="jumbotron" style="background-color: rgb(39, 39, 39)">
+            <h3 class="text text-center" style="color:white; font-style:'Libre Franklin'";>Edit Absen</h3>
+        </div>
 		<input type="hidden" name="id" value="{{ $p->ID }}"> <br/>
         <div class="row">
             <div class="col-lg-2">
@@ -53,9 +56,9 @@
                 </div>
             </div>
         </div>
-        <input type="submit" value="Simpan Data" class="btn btn-primary">
+        <a href="/absen" class="btn btn-primary"> Kembali</a>
+        <input type="submit" value="Simpan Data" class="btn btn-success">
 	</form>
 	@endforeach
 
-
-    @endsection
+@endsection
