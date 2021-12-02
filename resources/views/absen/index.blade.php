@@ -1,12 +1,12 @@
 @extends('layout.ceria')
 
-@section('title','DATABASE PEGAWAI')
+@section('title','DATABASE ABSEN PEGAWAI')
 
 @section('isikonten')
 
-@section('judulhalaman', 'DATABASE PEGAWAI')
+@section('judulhalaman', 'DATABASE ABSEN PEGAWAI')
 
-    <h3>Data Pegawai</h3>
+    <h3>Data Absen Pegawai</h3>
 
 	<a href="/absen/tambah" class="btn btn-primary" > + Tambah Absen Pegawai Baru</a>
 

@@ -4,6 +4,8 @@
 
 @section('isikonten')
 
+@section('judulhalaman', 'TAMBAH ABSEN PEGAWAI')
+
 <div class="container">
 	<form action="/absen/store" method="post">
 		{{ csrf_field() }}
@@ -44,11 +46,9 @@
             <label>Status :</label>
         </div>
         <div class="col-lg-8">
-            <div class="row">
+            <div class="row" style="margin: 5px">
                 <input type="radio" id="hadir" name="status" value="H">
                 <label for="hadir">HADIR</label>
-            </div>
-            <div class="row">
                 <input type="radio" id="tidak" name="status" value="T" checked="checked">
                 <label for="tidak">TIDAK HADIR</label><br>
             </div>
