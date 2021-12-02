@@ -2,6 +2,11 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <style>
     body {
     margin: 0;
@@ -55,8 +60,7 @@
 
     div.content {
     margin-left: 250px;
-    padding: 1px 16px;
-    height: 1000px;
+    height: 600px;
     }
 
     @media screen and (max-width: 700px) {
@@ -87,6 +91,18 @@
     background-color: rgba(0, 0, 0, 0.4);
     border-radius: 10px;
     }
+    body,h1 {
+        font-family: "Raleway", sans-serif;
+    }
+    body, html {
+        height: 600px
+    }
+    .bgimg {
+    background-image: url('img/background.jpg');
+    min-height: 600px;
+    background-position: center;
+    background-size: cover;
+    }
     </style>
 </head>
 <body>
@@ -106,10 +122,16 @@
 </div>
 
 <div class="content">
-  <h2>Responsive Sidebar Example</h2>
-  <p>This example use media queries to transform the sidebar to a top navigation bar when the screen size is 700px or less.</p>
-  <p>We have also added a media query for screens that are 400px or less, which will vertically stack and center the navigation links.</p>
-  <h3>Resize the browser window to see the effect.</h3>
+    <div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
+        <div class="w3-display-topleft w3-padding-large w3-xlarge">
+          Choose database on sidebar
+        </div>
+        <div class="w3-display-middle">
+          <h1 class="w3-jumbo w3-animate-top">WELCOME</h1>
+          <hr class="w3-border-grey" style="margin:auto;width:40%">
+          <p class="w3-large w3-center">Laravel Database Project</p>
+        </div>
+      </div>
 </div>
 
 </body>
