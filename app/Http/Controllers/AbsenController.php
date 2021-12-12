@@ -10,12 +10,26 @@ class AbsenController extends Controller
     public function index()
     {
     	// mengambil data dari table pegawai
-    	$absen = DB::table('absen')->get();
+    	$absen = DB::table('absen')
+        ->join('pegawai', 'absen.IDPegawai', '=', 'pegawai.pegawai_id')
+        ->select('absen.*', 'pegawai.pegawai_nama')
+        ->paginate(3);
 
     	// mengirim data pegawai ke view index
     	return view('absen.index',['absen' => $absen]);
 
     }
+    //method untuk pencarian
+    public function cari(Request $request)
+	{
+		$cari = $request->cari;
+        $absen = DB::table('absen')
+        ->join('pegawai', 'absen.IDPegawai', '=', 'pegawai.pegawai_id')
+        ->select('absen.*', 'pegawai.pegawai_nama')
+		->where('pegawai_nama','like',"%".$cari."%")
+		->paginate();
+		return view('absen.index',['absen' => $absen]);
+	}
     // method untuk menampilkan view form tambah pegawai
 public function tambah()
 {
