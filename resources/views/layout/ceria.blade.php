@@ -100,8 +100,7 @@
       <a href="/pegawai">Pegawai</a>
       <a href="/absen">Absen</a>
       <a href="/pendapatan">Pendapatan</a>
-      <a href="#">Minggu depan</a>
-      <a href="#">Praktikum</a>
+      <a href="/penggaris">Penggaris</a>
       <footer>
           Copyright &copy; 2021 Hak Cipta Oleh Girhan Nuriski 5026201149
       </footer>

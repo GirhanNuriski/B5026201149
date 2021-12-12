@@ -74,6 +74,9 @@ Route::post('/pendapatan/update','PendapatanController@update');
 //route hapus
 Route::get('/pendapatan/hapus/{id}','PendapatanController@hapus');
 
+//route cari pendapatan
+Route::get('/pendapatan/cari','PendapatanController@cari');
+
 //route absen
 Route::get('/absen','AbsenController@index');
 Route::get('/absen/tambah','AbsenController@tambah');
