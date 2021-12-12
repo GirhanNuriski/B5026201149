@@ -13,7 +13,7 @@ class AbsenController extends Controller
     	$absen = DB::table('absen')
         ->join('pegawai', 'absen.IDPegawai', '=', 'pegawai.pegawai_id')
         ->select('absen.*', 'pegawai.pegawai_nama')
-        ->paginate(3);
+        ->paginate(5);
 
     	// mengirim data pegawai ke view index
     	return view('absen.index',['absen' => $absen]);
@@ -27,7 +27,7 @@ class AbsenController extends Controller
         ->join('pegawai', 'absen.IDPegawai', '=', 'pegawai.pegawai_id')
         ->select('absen.*', 'pegawai.pegawai_nama')
 		->where('pegawai_nama','like',"%".$cari."%")
-		->paginate();
+		->paginate(5);
 		return view('absen.index',['absen' => $absen]);
 	}
     // method untuk menampilkan view form tambah pegawai

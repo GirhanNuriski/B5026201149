@@ -44,7 +44,7 @@
             <div class="col-lg-8">
                 <textarea required="required" name="alamat" class="form-control">{{ $p->pegawai_alamat }}</textarea>
             </div>
-        </div>
+        </div><br>
         <a href="/pegawai" class="btn btn-primary"> Kembali</a>
         <input type="submit" value="Simpan Data" class="btn btn-success">
 	</form>

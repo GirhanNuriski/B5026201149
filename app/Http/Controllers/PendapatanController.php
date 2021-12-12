@@ -14,7 +14,7 @@ class PendapatanController extends Controller
     	$pendapatan = DB::table('pendapatan')
         ->join('pegawai', 'pendapatan.IDPegawai', '=', 'pegawai.pegawai_id')
         ->select('pendapatan.*', 'pegawai.pegawai_nama')
-        ->paginate(3);
+        ->paginate(5);
 
     	// mengirim data pendapatan ke view index
     	return view('pendapatan.index',['pendapatan' => $pendapatan]);
@@ -28,7 +28,7 @@ class PendapatanController extends Controller
         ->join('pegawai', 'pendapatan.IDPegawai', '=', 'pegawai.pegawai_id')
         ->select('pendapatan.*', 'pegawai.pegawai_nama')
 		->where('pegawai_nama','like',"%".$cari."%")
-		->paginate();
+		->paginate(5);
 		return view('pendapatan.index',['pendapatan' => $pendapatan]);
 	}
 
