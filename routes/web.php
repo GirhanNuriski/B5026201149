@@ -77,3 +77,8 @@ Route::get('/penggaris/edit/{id}','PenggarisController@edit');
 Route::post('/penggaris/update','PenggarisController@update');
 Route::get('/penggaris/hapus/{id}','PenggarisController@hapus');
 Route::get('/penggaris/detail/{id}','PenggarisController@view');
+
+Route::get('/belanja','BelanjaController@index');
+Route::get('/belanja/tambah','BelanjaController@tambah');
+Route::post('/belanja/store','BelanjaController@store');
+Route::get('/belanja/hapus/{id}','BelanjaController@hapus');

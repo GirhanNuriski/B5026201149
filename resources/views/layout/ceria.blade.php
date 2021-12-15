@@ -101,6 +101,7 @@
       <a href="/absen">Absen</a>
       <a href="/pendapatan">Pendapatan</a>
       <a href="/penggaris">Penggaris</a>
+      <a href="/belanja">EAS</a>
       <footer>
           Copyright &copy; 2021 Hak Cipta Oleh Girhan Nuriski 5026201149
       </footer>
